@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+<meta charset = "utf-8">
+<title>NO.1</title>
+<meta name  = "author" content = "Adalyn">
+<meta name = "keywords" content = "网页布局">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class = "container table-responsive">
+  <h2>表格</h2>
+  <p>水果描述</p>
+  <table class = "table table-bordered table-hover table-condensed">
+    <thead>
+      <tr class = "active">
+        <th>序号</th>
+        <th>名字</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class = "success">
+         <td>1</td>
+         <td>苹果</td>
+       </tr>
+       <tr class = "info">
+         <td>2</td>
+         <td>香蕉</td>
+       </tr>
+       <tr class = "warning">
+         <td>3</td>
+         <td>梨子</td>
+       </tr>
+       <tr class = "danger">
+         <td>4</td>
+         <td>桃子</td>
+       </tr>
+     </tbody>
+   </table>
+ </div>
+ <br>
+ <strong>垂直和基本表单</strong>
+ <form role = "form">
+   <div class = "form-group">
+     <label for = "name">名称</label>
+     <input type = "text" class = "form-control" id = "name" placeholder = "请输入名称">
+   </div>
+   <div class = "form-group">
+     <label for = "inputfile">文件输入</label>
+     <input type = "file" id = "inputfile">
+   </div>
+   <div class = "checkbox">
+     <label>
+       <input type = "checkbox">请打勾
+     </label>
+   </div>
+   <button type = "submit" class = "btn btn-default">提交</button>
+ </form>
+ <br>
+ <strong>内联表单</strong>
+ <form class = "form-inline" role = "form">
+   <div class = "form-group">
+      <label class = "sr-only" for = "name">名称</label>
+      <input type = "text" class = "form-control" id = "name" placeholder = "请输入名称">
+   </div>
+   <div class = "form-group">
+     <label for = "inputfile">文件输入</label>
+     <input type = "file" id = "inputfile">
+   </div>
+   <div class = "checkbox">
+     <label>
+       <input type = "checkbox">请打勾
+     </label>
+   </div>
+   <button type = "submit" class = "btn btn-default">提交</button>
+ </form>
+</body>
+</html>
