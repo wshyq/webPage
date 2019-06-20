@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安全帽登录</title>
+    <link rel="stylesheet" href="../css/base.css" >
+	<link rel="stylesheet" href="../css/login.css" >
+  
+   
+    <script src = "../js/login.js"></script>
+    <!--<script src = "../js/jquery.cookie.js"></script>-->
+	<script src = "../js/jquery-2.2.1.min.js"></script>
+    <script src = "../js/base.js"></script>
+	
+	
+
+    <style>
+        .t_title{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 2.5em;
+            line-height: 80px;
+            color: #fff;
+        }
+        #data_table{
+            cursor: pointer;
+        }
+        .t_show{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-radius: 2px;
+            background: #2C58A6;
+            padding: 2px 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+ 
+
+<!--header-->
+<div class="header">
+    <div class="bg_header">
+        <div class="header_nav fl t_title">
+           安全帽数据
+        </div> 
+    </div>
+</div> 
+
+
+<!--main-->
+
+	<form name = "form_login" id = "form_login" action="" method = "post">
+		<h1>用户登录</h1><br>
+         <input class="input_1" id = "userName" size = "15"  name="userName"  placeholder="用户名"><br />
+         <input class="input_1" id = "passWord" type = "text" size= "15" name="passWord" placeholder="密码"><br /><br/>
+         <input class = "input_3" type="button" onclick="userLogin()" value="登录" />
+         <input class = "input_3" type="button"  onclick = "document.form_login.reset()" value="重置" /> 
+	</form>
+	
+
+</body>
+</html>

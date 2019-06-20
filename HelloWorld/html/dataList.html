@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0">
+    <title>安全帽</title>
+	<link rel="stylesheet" href="../css/bootstrap.css" >
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+ 
+   <!-- <script src = "../js/jquery.cookie.js"></script>-->
+	<script src = "../js/jquery-2.2.1.min.js"></script>
+    <script src = "../js/base.js"></script>
+
+    <style>
+        .t_title{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 2.5em;
+            line-height: 80px;
+            color: #fff;
+        }
+        #data_table{
+            cursor: pointer;
+        }
+        .t_show{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-radius: 2px;
+            background: #2C58A6;
+            padding: 2px 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+ 
+
+<!--header-->
+<div class="header">
+    <div class="bg_header">
+        <div class="header_nav fl t_title">
+           安全帽数据
+        </div> 
+    </div>
+    <div class = "header header_myself fl">
+         <div class="col-sm-3 col-md-3">
+	         <form class="navbar-form" role="search" action="../html/dataChart.html" method="post">
+		         <div class="input-group">
+		             <input id = "serch" type="text" class="form-control" name="s" value="" placeholder="输入帽子编号查询详情……" >
+		             <div class="input-group-btn">
+		                 <button class="btn btn-default" type="submit">检索</button>
+		             </div>
+		         </div>
+	         </form>
+        </div> 
+   </div>
+     <div id = "http" class="header_myself fr t_height">
+            <button onclick = "login" style="color: aqua"> 登录</button>
+     </div>
+     
+     </div>
+
+
+<!--main-->
+
+<div class="data_content">
+	<br>
+    <div class="data_main">
+        <div class="main_left fl">
+            <div class="left_1 t_btn6" style="cursor: pointer;">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+               
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                    <!--右下边框-->
+                    <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div> 
+                <div class="main_title">
+                  预留
+                </div>
+                <div id="chart_1" class="chart" style="width:100%;height: 460px;"></div>
+            </div>
+		</div>
+        <div class="main_center fl">
+            <div class="center_text">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+               
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                 <!--右下边框-->
+                 <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div> 
+                <div class="main_title">
+                   基本数据表
+                </div>
+                <br>
+                <div class = "main_table t_btn2">
+                	<table id = "list">
+                        <thead>
+                        
+                        <tr>
+                            <th>序号</th>
+                            <th>帽子编号</th>
+                            <th>跌倒状态</th>
+                            <th>心率</th>
+                            <th>环境温度</th>
+                            <th>磁场强度</th>
+                            <th>大气压力</th>
+                            <th>有害气体浓度</th>
+                            <th>位置经纬度</th>
+                            <th>更新时间</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        	
+                        </tbody>
+                     
+                    </table>
+				</div>
+            
+                <div id="data_table" style="width:100%;height:600px;"></div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
